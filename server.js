@@ -27,7 +27,7 @@ const transporter = nodemailer.createTransport({
 
 // Custom Middleware
 const port = process.env.PORT;
-app.use(express.static('static'));
+app.use("/static", express.static(path.join(__dirname, "../static")));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
