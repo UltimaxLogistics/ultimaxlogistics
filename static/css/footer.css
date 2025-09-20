@@ -1,0 +1,72 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 20px;
+}
+/* Footer */
+footer {
+    background-color: #040113;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* =================== FOOTER MEDIA QUERIES =================== */
+
+/* Large Screens (>1200px) */
+@media screen and (min-width: 1200px) {
+  body {
+    margin-top: 30px;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 20px 0;
+    font-size: 1rem;
+  }
+}
+
+/* Medium Screens (Tablets: 768px - 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  body {
+    margin-top: 25px;
+    font-size: 0.95rem;
+  }
+  footer {
+    padding: 18px 0;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens (Phones: < 768px) */
+@media screen and (max-width: 767px) {
+  body {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  footer {
+    padding: 14px 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+/* Extra Small Screens (Very small phones < 400px) */
+@media screen and (max-width: 400px) {
+  body {
+    margin-top: 10px;
+    font-size: 0.85rem;
+  }
+  footer {
+    padding: 12px 5px;
+    font-size: 0.85rem;
+  }
+}

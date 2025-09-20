@@ -1,0 +1,64 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/index.css">
+<title>Home | Ultimax Logistics LTD</title>
+<body class="home-page">
+    <h2 class="welcome-text">Welcome To Ultimax Logistics Limited</h2>
+    <section class="aboutUs" id="aboutUs">
+        <h2 class="aboutUs-text">
+            Ultimax Logistics Limited (ULL) is an indigenous firm set up in 2012. 
+            It was incorporated under the companies and allied matters decree of Nigeria, 1968. 
+            Ultimax Logistics Limited was established with the aim of providing a wide range of services such as:
+        </h2>
+        <div class="services" id="services">
+            <% services.forEach(service => { %>
+                <div class="services-card">
+                    <img src="/images/<%= service.img %>" alt="<%= service.title %>" class="service-image">
+                    <h3 class="service-title"><%= service.title %></h3>
+                    <p class="service-description"></p> 
+                </div>
+            <% }) %>
+        </div>
+        <div class="proposal-scope" id="scope">
+            <h3 class="proposal-heading">CLIENT’S REQUIREMENTS / PROPOSAL SCOPE</h3>
+            <p>
+                ULL is pleased to make/forward this proposal, highlighting our capability with respect to the services listed above.
+            </p>
+            <p>
+                <strong>ULL</strong> has extensive expertise in the area of travel and meet/greet services in various airports in the country.
+                We are able to assist Client in the provision of the required services. 
+                We would assist various companies navigate the bureaucratic and time-consuming process of commuting to various designation in Nigeria.
+            </p>
+            <p>
+                Specifically, this proposal is limited to the provision of the following services for the benefit of Client:
+            </p>
+            <ol>
+                <li>Provision of meet and greet services</li>
+                <li>Provision of ticketing and reservation services</li>
+                <li>Other travel related services that might be requested by Client</li>
+            </ol>
+            <p>
+                We welcome any opportunity to expand the scope of the services contained in this proposal and where such additional services are required,
+                we would agree the terms and conditions prior to the commencement of such services.
+            </p>
+            <p>Some of our clients include:</p>
+            <ul>
+                <li>Poseidon Energy Services Limited</li>
+                <li>Desicon Engineering Limited</li>
+                <li>Kerex Nigeria Limited</li>
+                <li>Boskel Nigeria Limited</li>
+            </ul>
+        </div>
+    </section>
+    <section class="contactUs" id="contactUs">
+        <h2 class="contactUs-heading">Contact Us</h2>
+        <form id="contactForm" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button id="contact-button">Send Message</button>
+            <p id="formMessage" class="formMessage"></p>
+        </form>
+    </section>
+</body>
+<%- include('partials/footer') %>
+<script src="/js/index.js" defer></script>

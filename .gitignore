@@ -1,0 +1,8 @@
+# Environment Variable For Local
+.env 
+
+# Api Tester
+API/
+
+# Node Modules
+node_modules/

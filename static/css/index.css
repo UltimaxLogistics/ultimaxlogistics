@@ -1,0 +1,319 @@
+/* Homepage */
+.home-page{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #040113;
+}
+.welcome-text{
+    font-size: 2.5em;
+    margin-top: 20%;
+    color: #a7b3f5;
+}
+/* About Us Section */
+.aboutUs {
+    background-color: #040113;
+    color: #a7b3f5;
+    padding: 5rem 1.5rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.aboutUs-text {
+    font-size: 1.3rem;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: 0 auto 3rem auto;
+    color: #c3cbfa;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+/* ===== Services Section ===== */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #040113; /* Site background */
+}
+
+/* Service Card */
+.services-card {
+  flex: 1 1 200px;
+  max-width: 220px;
+  background: linear-gradient(145deg, #0a0720, #0d092b);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 20px 15px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+
+.services-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Service Image */
+.service-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* Title */
+.service-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 6px;
+  letter-spacing: 0.3px;
+}
+
+/* Description */
+.service-description {
+  font-size: 0.85rem;
+  color: #b0b3c5;
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+/* Proposal Scope Section*/
+.proposal-scope {
+    max-width: 850px;
+    margin: 3rem auto 0 auto;
+    text-align: left;
+    background-color: #0d0d2a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+}
+
+.proposal-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.proposal-scope p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #c3cbfa;
+}
+
+/* Clean List Styling with Icons */
+.proposal-scope ol,
+.proposal-scope ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.proposal-scope li {
+    margin-bottom: 0.8rem;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.7;
+    color: #c3cbfa;
+}
+
+.proposal-scope li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #2d2f80;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Us Section */
+.contactUs {
+    background-color: #040113;
+    color: #a7b3f5;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.contactUs-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #a7b3f5;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #040113;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #040113;
+    color: #a7b3f5;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ffffff;
+    color: #0a1a70;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#contact-button:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    transform: translateY(-2px);
+}
+
+#formMessage {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/* =================== MEDIA QUERIES =================== */
+
+/* Large Screens (Desktops > 1200px) */
+@media screen and (min-width: 1200px) {
+    .services {
+        max-width: 1200px;
+    }
+    .services-card {
+        max-width: 250px;
+    }
+    .welcome-text {
+        font-size: 3em;
+    }
+}
+
+/* Medium Screens (Tablets: 768px - 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .welcome-text {
+        font-size: 2.2em;
+        margin-top: 15%;
+    }
+    .aboutUs-text {
+        font-size: 1.2rem;
+    }
+    .services {
+        gap: 20px;
+        padding: 30px 15px;
+    }
+    .services-card {
+        max-width: 45%;
+    }
+    .proposal-scope {
+        padding: 2rem;
+    }
+}
+
+/* Small Screens (Phones: < 768px) */
+@media screen and (max-width: 767px) {
+    .welcome-text {
+        font-size: 1.8em;
+        margin-top: 25%;
+    }
+    .aboutUs-text {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        padding: 0 1rem;
+    }
+    .services {
+        flex-direction: column;
+        gap: 18px;
+        padding: 25px 10px;
+    }
+    .services-card {
+        max-width: 100%;
+    }
+    .proposal-scope {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+    }
+    .proposal-heading {
+        font-size: 1.4rem;
+    }
+    .contact-form {
+        padding: 1.5rem;
+    }
+    #contact-button {
+        font-size: 0.95rem;
+    }
+}
+
+/* Extra Small Screens (Very small phones < 400px) */
+@media screen and (max-width: 400px) {
+    .welcome-text {
+        font-size: 1.5em;
+        margin-top: 30%;
+    }
+    .services {
+        gap: 15px;
+    }
+    .proposal-heading {
+        font-size: 1.2rem;
+    }
+    .aboutUs-text,
+    .proposal-scope p {
+        font-size: 1rem;
+    }
+    #contact-button {
+        padding: 0.7rem;
+        font-size: 0.85rem;
+    }
+}
