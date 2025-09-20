@@ -2,6 +2,7 @@
 const dotenv = require('dotenv');
 const express = require('express');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 
 // Load environment variables from .env file
